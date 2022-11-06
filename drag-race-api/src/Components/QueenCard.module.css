@@ -1,0 +1,23 @@
+.card {
+	border-radius: 1em;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	justify-content: space-around;
+	margin: 3px;
+	overflow: hidden;
+	position: relative;
+	transition: all 300ms;
+	width: 225px;
+}
+
+.card:hover {
+	filter: brightness(1.5);
+	transform: scale(1.01);
+}
+
+.qcImg {
+	height: 300px;
+	width: 226px;
+}
