@@ -11,12 +11,11 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	/* visibility: hidden; */
 	z-index: 1;
 }
 
 .modalGuts {
-	align-items: center;
+	align-content: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -35,26 +34,25 @@
 	margin: 10vh 14.7em;
 	padding: 0.7em;
 	width: 725px;
+	justify-content: center;
 }
 
-#champName,
-#type,
-#title {
+#portrait {
+	border-radius: 15px;
+	height: 300px;
+	margin-top: 3px;
+	width: 225px;
+	margin: 0 auto;
+}
+
+#queenName {
 	font-weight: bold;
 	text-align: center;
 }
 
-#blurb {
+#quote {
 	font-size: 20px;
 	padding-left: 5px;
-}
-
-#splash {
-	border-radius: 15px;
-	height: 400px;
-	margin-top: 3px;
-	padding-right: 5px;
-	width: 700px;
 }
 
 .hidden {

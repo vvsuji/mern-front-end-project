@@ -3,7 +3,8 @@ import QueenCard from './Components/QueenCard';
 import style from './App.module.css';
 import Modal from './Components/Modal';
 
-const url = `https://api-json-project-production.up.railway.app/queens`;
+const url = `https://api-json-project-production.up.railway.app/queens/
+`;
 
 function App() {
 	const [queens, setQueens] = useState([]);
@@ -14,14 +15,13 @@ function App() {
 		try {
 			const response = await (await fetch(url)).json();
 			setQueens(response);
-			// console.log(response[0].name);
 		} catch (err) {
 			console.log('err', err);
 		}
 	}
 
 	function openModal(queenName) {
-		setSelectedQueens(queens[queenName]);
+		setSelectedQueens(queenName);
 		setOpen(true);
 	}
 
